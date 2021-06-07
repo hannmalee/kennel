@@ -7,6 +7,7 @@ import { Kennel } from ".components/Kennel"
 
 ReactDOM.render(
   <React.StrictMode>
+    <LocationProvider />
     <Kennel />
   </React.StrictMode>,
   document.getElementById('root')
