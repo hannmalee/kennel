@@ -30,6 +30,8 @@ export const AnimalProvider = (props) => { // not all machinery in the warehouse
         and the `addAnimal` function as keys. This
         allows any child elements to access them.
     */
+
+        // now we expose what this component will expose to other components: 
     return (
         <AnimalContext.Provider value={{ // it is THIS object that is available to other components, not the functions
             animals, getAnimals, addAnimal // 

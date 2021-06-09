@@ -1,4 +1,6 @@
 import React from "react"
+import { AnimalProvider } from "./animal/AnimalProvider"
+import { AnimalList } from "./animal/AnimalList"
 import { Animal } from "./animal/Animal"
 import "./Kennel.css"
 
@@ -13,9 +15,10 @@ export const Kennel = () => (
 
         <h2>Animals</h2>
         <article className="animals">
-            <Animal />
-            <Animal />
-            <Animal />
+            <AnimalProvider>
+                <AnimalList />
+            </AnimalProvider>
+
         </article>
     </>
 )
